@@ -73,38 +73,47 @@ crisis-chatbot/
 ### Installation (Windows)
 ```bash
 # 1. Clone repository
-git clone https://github.com/your-org/crisis-chatbot.git
+git clone https://github.com/abhiroopsen2025-dot/Crisis-Chatbot-Q1113323.git
 cd crisis-chatbot
 
 # 2. Setup environment
-copy .env.example .env
+python3 -m venv venv
+.\venv\Scripts\Activate.ps1
 
-# 3. Start services
-deploy.bat start
+# 3. Install Packages
+pip install -r requirements.txt
+
+4. Start Services
+streamlit run app.py
+
 
 # 4. Access application
 # Frontend: http://localhost:8501
 # API: http://localhost:5005
+# Network URL: http://192.168.178.88:8501
+
 ```
 
 ### Installation (Linux/Mac)
 ```bash
 # 1. Clone repository
-git clone https://github.com/your-org/crisis-chatbot.git
+git clone https://github.com/abhiroopsen2025-dot/Crisis-Chatbot-Q1113323.git
 cd crisis-chatbot
 
 # 2. Setup environment
-cp .env.example .env
+python3 -m venv venv
+source venv/bin/activate
 
-# 3. Make scripts executable
-chmod +x deploy.sh
+# 3. Install Packages
+pip install -r requirements.txt
 
 # 4. Start services
-./deploy.sh development start
+streamlit run app.py
 
 # 5. Access application
 # Frontend: http://localhost:8501
 # API: http://localhost:5005
+# Network URL: http://192.168.178.88:8501
 ```
 
 ---
@@ -400,3 +409,4 @@ For issues, questions, or suggestions:
 **Last Updated**: January 31, 2024
 **Version**: 1.0.0
 **Status**: Production Ready ✅
+
